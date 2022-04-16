@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*--- ページ基本デザイン ---*/
+#top {
+	height: 120px;
+	background-size: 120%;
+	background-position: center center;
+	background-attachment: fixed;
+}
+#header {
+	width: 1140px;
+	margin: 0 auto 0 auto;
+	padding-top: 15px;
+}
+#header-logo {
+	float: left;
+	background-color: #fff;
+	margin-top: 10px;
+}
+#header ul {
+	float: right;
+}
+#header ul li {
+	text-align: right;
+	display: inline-block;
+	margin-right: 20px;
+}
+#header ul li p.line {
+	color: #000;
+	font-size: 13px;
+}
+#header a {
+	color: #000;
+	font-size: 13px;
+}
+#header ul li p {
+	color: #000;
+	font-weight: bold;
+	font-size: 13px;
+}
+.under {
+	width: 1140px;
+	margin: 0 auto;
+	border-bottom: solid 1px #000;
+	color: #000;
+}
+
+/* ハンバーガーメニュー */
+#hamburger-pic {
+  float: right;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 35px;
+	position: fixed;
+  display: none;
+	cursor: pointer;
+	z-index: 2;
+}
+#hamburger-pic img {
+	float: right;
+	width: 45px;
+	height: 45px;
+}
+#hamburger {
+	display: none;
+}
+
+#wrap {
+	width: 100%;
+	height: 1100px;
+	background-color: #fff;
+	background-position: center center;
+	display: block;
+}
+#privacypolicy {
+	padding-bottom: 50px;
+}
+#privacypolicy .maintext {
+	color: #237abd;
+	font-family: sans-serif;
+	font-size: 28px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	display: block;
+}
+.bottom_line {
+	margin: 0 auto;
+	padding-top: 10px;
+}
+#description {
+	width: 920px;
+	height: 900px;
+	margin: auto;
+}
+#description ul {
+	padding-bottom: 30px;
+}
+#description ul li {
+	display: block;
+}
+#description ul ol li p {
+	color: #000;
+	font-size: 14px;
+	text-align: left;
+}
+#description ul li p.bold {
+	font-weight: bold;
+	color: #000;
+	font-size: 16px;
+	text-align: left;
+	border-bottom: solid 1px #DCDCDC;
+}
+#description ul li p {
+	color: #000;
+	font-size: 14px;
+	text-align: left;
+	margin-top: 5px;
+}
+/* フッター */
+#footer {
+	width: 920px;
+	height: 160px;
+	margin: 0 auto;
+	border-top: solid 1px #DCDCDC;
+}
+#footer p {
+	font-size: 13px;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 1140px){
+	#top {
+		height: 100%;
+	}
+	#header {
+		width: 90%;
+	}
+	#header-logo {
+		float: none;
+	}
+	#header ul {
+		float: none;
+	}
+	#header ul li {
+		display: block;
+	}
+	#header ul li p.line {
+		display:none
+	}
+	#header ul li p {
+		display: block;
+		text-align: right;
+	}
+	.under {
+		width: 90%;
+		margin-bottom: 50px;
+	}
+	#wrap {
+		height: 100%;
+	}
+	#description {
+		width: 80%;
+		height: 100%;
+	}
+	#description ul li {
+		display: block;
+	}
+	#footer {
+		width: 100%;
+	}
+
+	/* ハンバーガーメニュー */
+@media screen and (max-width: 768px){
+	#header ul li {
+		display: none;
+	}
+	#hamburger-pic {
+		float: right;
+		display: block;
+	}
+	#hamburger {
+		padding-top: 3%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 50%;
+		display: block;
+		z-index: 1;
+		background-color: #DCDCDC;
+	}
+	#hamburger ul li {
+		display: block;
+		margin-top: 5%;
+		width: 100%;
+		padding: 5px;
+		text-align: center;
+	}
+	#hamburger ul li p {
+		display: block;
+		width: 100%;
+		padding: 5px;
+		text-align: center;
+	}
+}

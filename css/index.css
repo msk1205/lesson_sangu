@@ -1,0 +1,495 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea { font-size: 100%; vertical-align:middle;}
+img { border-style: none; display: block; }
+hr { display: none; }
+em{font-style: normal}
+input{line-height:auto;vertical-align:middle;}
+strong.more{color:#c30}
+a{text-decoration: none;}
+
+html {
+}
+
+body {
+	font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+
+}
+
+/*クラス定義*/
+.clearfix:after {
+	content: ".";
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix{height: 1%;}
+*+html .clearfix{min-height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;s
+	box-sizing: border-box;
+}
+
+/*--- ページ基本デザイン ---*/
+#top {
+	background-image: url(../img/index/bg.png);
+	height: 100vh;
+	background-size: 120%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+#header {
+	width: 1140px;
+	margin: 0 auto 0 auto;
+	padding-top: 15px;
+}
+#header-logo {
+	float: left;
+	background-color: #fff;
+	margin-top: 20px;
+	width: 160px;
+}
+#header ul {
+	float: right;
+}
+#header ul li.current a {
+	color: #237abd;
+}
+#header ul li {
+	text-align: right;
+	display: inline-block;
+	margin-right: 20px;
+}
+#header ul li p.line {
+	color: #fff;
+	font-size: 13px;
+}
+#header a {
+	color: #fff;
+	font-size: 13px;
+}
+#header ul li p {
+	color: #fff;
+	font-weight: bold;
+	font-size: 13px;
+}
+.under {
+	width: 1140px;
+	margin: 0 auto;
+	border-bottom: solid 1px #fff;
+}
+
+/* ハンバーガーメニュー */
+#hamburger-pic {
+  float: right;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 35px;
+	position: fixed;
+  display: none;
+	cursor: pointer;
+	z-index: 2;
+}
+#hamburger-pic img {
+	float: right;
+	width: 45px;
+	height: 45px;
+}
+#hamburger {
+	display: none;
+}
+
+#top .main-text {
+	display: block;
+	margin:  0 auto;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	width: 30%;
+}
+#whitebox {
+	width: 200px;
+	padding: 0.5em 1em;
+	margin: 0 auto;
+	border: solid 1px #fff;
+	cursor: pointer;
+}
+#whitebox p.message {
+	color: #fff;
+	font-family: serif;
+	font-weight: bold;
+	font-size: 15px;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+#concept {
+	width: 100%;
+	height: 650px;
+	padding: 50px 50px;
+	background-color: #f8f8f8;
+	background-position: center center;
+	display: block;
+}
+#concept #our_text {
+	margin: auto;
+	display: block;
+	width: 30%;
+}
+#rule {
+	width: 920px;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+#rule .box {
+	flex: auto;
+	flex-basis: 30%;
+	align-items: center;
+	margin-top: 50px;
+}
+#rule .box img.image {
+	margin: auto;
+}
+#rule .box p.index {
+	color: #000;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 20px;
+}
+#service {
+	width: 100%;
+	height: 670px;
+	padding: 50px 50px;
+	background-color: #fff;
+	margin: 0 auto;
+	display: block;
+}
+#service .maintext {
+	color: #237abd;
+	font-family: sans-serif;
+	font-size: 22px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	display: block;
+}
+.bottom_line {
+	margin: 0 auto;
+	padding: 10px 0 30px 0;
+}
+.wrap {
+	width: 1000px;
+	height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+.wrap #bluebox1 {
+	display: inline-block;
+	width: 230px;
+	height: 190px;
+	margin: 30px 20px 0 10px;
+	box-shadow: 10px 10px 0px 0 #237abd;
+	flex: auto;
+}
+.wrap #bluebox2 {
+	display: inline-block;
+	width: 230px;
+	height: 190px;
+	margin: 30px 20px 0 10px;
+	box-shadow: 10px 10px 0px 0 #237abd;
+	flex: auto;
+}
+.wrap #bluebox3 {
+	display: inline-block;
+	width: 230px;
+	height: 190px;
+	margin: 30px 20px 0 10px;
+	box-shadow: 10px 10px 0px 0 #237abd;
+	flex: auto;
+}
+.wrap #bluebox4 {
+	display: inline-block;
+	width: 230px;
+	height: 190px;
+	margin: 30px 20px 0 10px;
+	box-shadow: 10px 10px 0px 0 #237abd;
+	flex: auto;
+}
+.wrap #bluebox5 {
+	display: inline-block;
+	width: 230px;
+	height: 190px;
+	margin: 30px 20px 0 10px;
+	box-shadow: 10px 10px 0px 0 #237abd;
+	flex: auto;
+}
+.wrap #bluebox6 {
+	display: inline-block;
+	width: 230px;
+	height: 190px;
+	margin: 30px 20px 0 10px;
+	box-shadow: 10px 10px 0px 0 #237abd;
+	flex: auto;
+}
+.wrap img.image {
+	width: 305px;
+	height: 190px;
+}
+.wrap div p.index {
+	color: #237abd;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 15px;
+}
+#recruit {
+	width: 100%;
+	height: 430px;
+	padding: 50px 0 50px 0;
+	background-color: #f8f8f8;
+	background-position: center center;
+	display: block;
+}
+#recruit p.maintext {
+	color: #237abd;
+	font-family: sans-serif;
+	font-size: 22px;
+	letter-spacing: 0.1em;
+	text-align: center;
+	display: block;
+}
+.wrap #recruit-pic1 {
+	width: 450px;
+	height: 250px;
+	margin-left: 50px;
+	padding-top: 5px;
+	background-image: url("../img/index/recruit.png");
+	background-repeat: no-repeat;
+}
+.wrap #recruit-pic2 {
+	width: 450px;
+	height: 250px;
+	padding-top: 5px;
+	background-image: url("../img/index/company.png");
+	background-repeat: no-repeat;
+}
+.wrap #recruit-pic1 .picture {
+	margin: 50px auto;
+}
+.wrap #recruit-pic2 .picture {
+	margin: 50px auto;
+}
+.wrap div p.text {
+	font-size: 13px;
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 0.1em;
+	margin: 30px auto;
+}
+/* フッター */
+#footer p {
+	font-size: 13px;
+	color: #000;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width: 1140px){
+	#top {
+		height: 100vh;
+		background-size: cover;
+	}
+	#header {
+		width: 90%;
+	}
+	#header-logo {
+		float: none;
+	}
+	#header ul {
+		float: none;
+	}
+	#header ul li {
+		display: block;
+	}
+	#header ul li p.line {
+		display: none;
+	}
+	#header ul li p {
+		display: block;
+		text-align: right;
+	}
+	.under {
+		width: 90%;
+		margin-bottom: 50px;
+	}
+	#concept {
+		height: 100%;
+	}
+	#rule {
+		width: 100%;
+		display: block;
+	}
+	#rule .box {
+		display: block;
+	}
+	#service {
+		height: 100%;
+		margin: 0 auto;
+	}
+	.wrap {
+		width: 100%;
+		height: 100%;
+		margin: 0 auto;
+		display: block;
+	}
+	.wrap #bluebox1 {
+		width: 305px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		display: block;
+		background-size: cover;
+		box-shadow: 10px 10px 0px 0 #237abd;
+	}
+	.wrap #bluebox2 {
+		width: 305px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		display: block;
+		background-size: cover;
+		box-shadow: 10px 10px 0px 0 #237abd;
+	}
+	.wrap #bluebox3 {
+		width: 305px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		display: block;
+		background-size: cover;
+		box-shadow: 10px 10px 0px 0 #237abd;
+	}
+	.wrap #bluebox4 {
+		width: 305px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		display: block;
+		background-size: cover;
+		box-shadow: 10px 10px 0px 0 #237abd;
+	}
+	.wrap #bluebox5 {
+		width: 305px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		display: block;
+		background-size: cover;
+		box-shadow: 10px 10px 0px 0 #237abd;
+	}
+	.wrap #bluebox6 {
+		width: 305px;
+		margin: 0 auto;
+		margin-bottom: 50px;
+		display: block;
+		background-size: cover;
+		box-shadow: 10px 10px 0px 0 #237abd;
+	}
+	#recruit {
+		height: 100%;
+	}
+	.wrap #recruit-pic1 {
+		margin: 0 auto;
+		display: block;
+	}
+	.wrap #recruit-pic2 {
+		margin: 0 auto;
+		display: block;
+	}
+	#footer {
+		width: 100%;
+	}
+
+	/* ハンバーガーメニュー */
+@media screen and (max-width: 768px){
+	#top {
+		height: 100vh;
+		background-size: cover;
+	}
+	#header ul li {
+		display: none;
+	}
+	#hamburger-pic {
+		float: none;
+		display: block;
+	}
+	#hamburger {
+		padding-top: 3%;
+		position: fixed;
+		top: 0;
+		right: 0;
+		height: 50%;
+		display: block;
+		z-index: 1;
+		background-color: #DCDCDC;
+	}
+	#hamburger ul li {
+		display: block;
+		margin-top: 5%;
+		width: 100%;
+		padding: 5px;
+		text-align: center;
+	}
+	#hamburger ul li a {
+		color: #000;
+		display: block;
+	}
+	#hamburger ul li p {
+		display: block;
+		width: 100%;
+		padding: 5px;
+		text-align: center;
+		color: #000;
+	}
+	#top .main-text {
+		width: 40%;
+		padding-top: 30px;
+	}
+	#concept #our_text {
+		width: 50%;
+	}
+	#rule .box p.index {
+		font-size: 15px;
+	}
+	.wrap div p.index {
+		font-size: 16px;
+	}
+	.wrap div p.text {
+		font-size: 14px;
+}

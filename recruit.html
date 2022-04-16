@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sangu</title>
+<link rel="stylesheet" type="text/css" href="css/recruit.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="top" class="clearfix">
+  <div id="header" class="clearfix">
+    <div id="header-logo">
+      <a href="index.html">
+        <img src="img/base/logo.png" alt="ロゴ">
+      </a>
+    </div>
+
+    <ul class="nav">
+      <li><p class="line">|</p></li>
+      <li><a href="company.html">会社概要</a></li>
+      <li><p class="line">|</p></li>
+      <li><a href="service.html"><span class="color">事業内容</span></a></li>
+      <li><p class="line">|</p></li>
+      <li class="current"><a href="recruit.html">採用情報</a></li>
+      <li><p class="line">|</p></li>
+      <li>
+        <a href="お問い合わせ">お電話でのお問い合わせ</a>
+        <br><p>TEL <span style="font-size:18px">03-3493-1551</span></p>
+      </li>
+    </ul>
+
+    <div id="hamburger-pic">
+      <img src="img/index/hamburger2.png" alt="ハンバーガーメニュー">
+    </div>
+
+    <div id="hamburger">
+      <ul>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li class="current"><a href="recruit.html">採用情報</a></li>
+        <li>
+          <a href="お問い合わせ">お電話でのお問い合わせ</a>
+          <br><p>TEL <span style="font-size:18px">03-3493-1551</span></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 下線 -->
+  <div class="under"></div>
+</div>
+
+<div id="recruit" class="clearfix">
+  <p class="maintext">RECRUIT</p>
+  <img class="bottom_line" src="img/base/index_bg.png" alt="下線">
+</div>
+
+<img id="recruit_text" src="img/recruit/recruit_text.png" alt="サービス">
+
+<div id="wrap"  class="clearfix">
+  <div id="step">
+    <p class="text">採用ステップ</p>
+    <div class="line"></div>
+    <img class="flow"src="img/recruit/step.png" alt="図">
+  </div>
+
+  <div id="contents">
+    <p class="text">募集要項</p>
+    <div class="line"></div>
+  </div>
+
+  <div id="box">
+    <table>
+      <tbody>
+        <tr>
+          <th>求める人材</th>
+          <td>2017年3月卒業見込みの建築・設備・電気・機械系学科を専攻の方</td>
+        </tr>
+
+        <tr>
+          <th>仕事内容</th>
+          <td>◆建物の改修・リニューアル・増築・新築等工事の請負
+          <br>◆建物の改修・リニューアル・増築・新築等に関するコンサルティング・企画・設計・監理の受託
+          <br>◆建物の各種診断・調査
+          <br>◆建物維持に関するマネジメント、設備機器の運転保守、警備業務その他管理業務の受託</td>
+        </tr>
+
+        <tr>
+          <th>勤務地</th>
+          <td>東京都</td>
+        </tr>
+
+        <tr>
+          <th>勤務時間</th>
+          <td>8時30分～17時10分（休憩：12時～13時）</td>
+        </tr>
+
+        <tr>
+          <th>給与</th>
+          <td>月給制</td>
+        </tr>
+
+        <tr>
+          <th>基本給</th>
+          <td>大学院卒　200,000円
+          <br>大学卒　195,000円
+          <br>短大・専門学校卒　185,000円</td>
+        </tr>
+
+        <tr>
+          <th>昇給・賞与</th>
+          <td>昇給/ 年1回（人事考課による本給改訂）　賞与/ 年間5ヶ月（初年度は2.5ヶ月）</td>
+        </tr>
+
+        <tr>
+          <th>諸手当</th>
+          <td>通勤費（全額）・超勤手当・責任者手当・住宅手当（支給条件あり）　他</td>
+        </tr>
+
+        <tr>
+          <th>休日・休暇</th>
+          <td>土・日（完全週休2日制）・祝日・夏季。年末年始・慶弔・年次有給休暇</td>
+        </tr>
+
+        <tr>
+          <th>社会保険</th>
+          <td>雇用・労災・健康・厚生年金</td>
+        </tr>
+
+        <tr>
+          <th>採用予定者数</th>
+          <td>若干名</td>
+        </tr>
+
+        <tr>
+          <th>提出書類</th>
+          <td>経験者の方/履歴書（写真貼付）、職務経歴書
+          <br>新卒の方/履歴書（写真貼付）、卒業見込証明書・成績証明書・健康診断書</td>
+        </tr>
+
+        <tr>
+          <th>採用方法</th>
+          <td>適性検査・作文・面接　※人物重視</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div id="footer" class="clearfix">
+  <p><a href="privacypolicy.html">プライバシーポリシー</a></p>
+  <p><small>CopyrightⒸSANGU inc. ALL Rights Reserved.</small></p>
+</div>
+
+</body>
+
+
+<script>
+$(function(){
+  navi();
+
+  function navi(){
+    $("#hamburger-pic").on("click",function(){
+      $(this).next().fadeToggle();
+      $("#hamburger").toggleClass("show");
+    });
+  }
+
+});
+
+</script>
+
+</html>

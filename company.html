@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>sangu</title>
+<link rel="stylesheet" type="text/css" href="css/company.css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div id="top" class="clearfix">
+  <div id="header" class="clearfix">
+    <div id="header-logo">
+      <a href="index.html">
+        <img src="img/base/logo.png" alt="ロゴ">
+      </a>
+    </div>
+
+    <ul>
+      <li><p class="line">|</p></li>
+      <li class="current"><a href="company.html">会社概要</a></li>
+      <li><p class="line">|</p></li>
+      <li><a href="service.html">事業内容</a></li>
+      <li><p class="line">|</p></li>
+      <li><a href="recruit.html">採用情報</a></li>
+      <li><p class="line">|</p></li>
+      <li>
+        <a href="お問い合わせ">お電話でのお問い合わせ</a>
+        <br><p>TEL <span style="font-size:18px">03-3493-1551</span></p>
+      </li>
+    </ul>
+
+    <div id="hamburger-pic">
+      <img src="img/index/hamburger2.png" alt="ハンバーガーメニュー">
+    </div>
+
+    <div id="hamburger">
+      <ul>
+        <li class="current"><a href="company.html">会社概要</a></li>
+        <li><a href="service.html">事業内容</a></li>
+        <li><a href="recruit.html">採用情報</a></li>
+        <li>
+          <a href="お問い合わせ">お電話でのお問い合わせ</a>
+          <br><p>TEL <span style="font-size:18px">03-3493-1551</span></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- 下線 -->
+  <div class="under"></div>
+</div>
+
+<div id="wrap" class="clearfix">
+  <div id="company">
+    <p class="maintext">COMPANY</p>
+    <img class="bottom_line" src="img/base/index_bg.png" alt="下線">
+  </div>
+
+  <table>
+    <tbody>
+      <tr>
+        <th>社名</th>
+        <td>株式会社　サングー</td>
+      </tr>
+      <tr>
+        <th>会社設立</th>
+        <td>昭和56年6月1日</td>
+      </tr>
+      <tr>
+        <th>東京本社</th>
+        <td>〒141-0031
+        <br>東京都品川区西五反田1丁目29番地2号（吾作ビル6F）
+        <br>TEL.03-3493-1551
+        <br>FAX.03-3493-1555
+        </td>
+      </tr>
+      <tr>
+        <th>資本金</th>
+        <td>1,200万円</td>
+      </tr>
+      <tr>
+        <th>役員</th>
+        <td>代表取締役社長　三宮　康司
+        <br>取締役副社長　　三宮　暢洋</td>
+      </tr>
+      <tr>
+        <th>営業品目</th>
+        <td>建築物の総合管理業務
+        <br>1.冷暖房・給排水・喚気・空調及び電気設備に関する計画施工保全管理業務
+        <br>2.清掃業務
+        <br>3.建築物環境衛生管理業務
+        <br>4.電気工事・点検業務
+        <br>5.消防設備点検業務
+        <br>6.植栽の剪定・保守・リース業務
+        <br>7.リフォーム業務
+        <br>8.サービス業務
+        </td>
+      </tr>
+      <tr>
+        <th>取引銀行</th>
+        <td>三菱東京UFJ銀行 五反田支店
+          <br>三井住友銀行　　五反田支店
+          <br>りそな銀行　　　五反田支店
+          <br>みずほ銀行　　　五反田支店
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div id="footer" class="clearfix">
+  <p><a href="privacypolicy.html">プライバシーポリシー</a></p>
+  <p><small>CopyrightⒸSANGU inc. ALL Rights Reserved.</small></p>
+</div>
+
+</body>
+
+<script>
+$(function(){
+  navi();
+
+  function navi(){
+    $('#hamburger').css('display', 'none');
+    $("#hamburger-pic").on("click",function(){
+      $(this).next().fadeToggle();
+      $("#hamburger").toggleClass("show");
+    });
+  }
+
+});
+
+</script>
+</html>
